@@ -20,5 +20,7 @@ define('GET', 'GET');
 define('POST', 'POST');
 
 return [
+    [GET, '', [IndexController::class, 'wellcome']],
     [GET, '/[*:uuid]', [IndexController::class, 'index']],
+
 ];
